@@ -15,4 +15,3 @@ This is the decompiled SRC of ICEHack-b1. I found the .jar lying around and this
 
 The client is about a year old, so the code is pretty dated, but it still might have a few useful classes and modules for you to skid into your own client.
 
-                                                      HausemasterIssue 2021
