@@ -1,0 +1,91 @@
+{
+  "mappings": {
+    "me/fluffycq/icehack/mixin/client/MixinEntityRenderer": {
+      "Lnet/minecraft/client/multiplayer/WorldClient;getEntitiesInAABBexcluding(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;": "Lnet/minecraft/client/multiplayer/WorldClient;func_175674_a(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;",
+      "getMouseOver": "Lnet/minecraft/client/renderer/EntityRenderer;func_78473_a(F)V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinNetworkManager": {
+      "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
+      "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinMinecraft": {
+      "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
+      "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V",
+      "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
+      "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinEntityPlayerSP": {
+      "move": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70091_d(Lnet/minecraft/entity/MoverType;DDD)V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinGuiScreen": {
+      "renderToolTip": "Lnet/minecraft/client/gui/GuiScreen;func_146285_a(Lnet/minecraft/item/ItemStack;II)V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinEntityPlayer": {
+      "travel": "Lnet/minecraft/entity/player/EntityPlayer;func_191986_a(FFF)V"
+    },
+    "me/fluffycq/icehack/mixin/client/MixinTabList": {
+      "renderPlayerlist": "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;func_175249_a(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V",
+      "getPlayerName": "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;func_175243_a(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;"
+    }
+  },
+  "data": {
+    "notch": {
+      "me/fluffycq/icehack/mixin/client/MixinEntityRenderer": {
+        "Lnet/minecraft/client/multiplayer/WorldClient;getEntitiesInAABBexcluding(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;": "Lbsb;a(Lvg;Lbhb;Lcom/google/common/base/Predicate;)Ljava/util/List;",
+        "getMouseOver": "Lbuq;a(F)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lgw;a(Lht;)V",
+        "channelRead0": "Lgw;a(Lio/netty/channel/ChannelHandlerContext;Lht;)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinMinecraft": {
+        "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lbib;c(Lb;)V",
+        "runTickKeyboard": "Lbib;aD()V",
+        "run": "Lbib;a()V",
+        "shutdown": "Lbib;n()V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinEntityPlayerSP": {
+        "move": "Lbud;a(Lvv;DDD)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinGuiScreen": {
+        "renderToolTip": "Lblk;a(Laip;II)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinEntityPlayer": {
+        "travel": "Laed;a(FFF)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinTabList": {
+        "renderPlayerlist": "Lbjq;a(ILbhk;Lbhg;)V",
+        "getPlayerName": "Lbjq;a(Lbsc;)Ljava/lang/String;"
+      }
+    },
+    "searge": {
+      "me/fluffycq/icehack/mixin/client/MixinEntityRenderer": {
+        "Lnet/minecraft/client/multiplayer/WorldClient;getEntitiesInAABBexcluding(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;": "Lnet/minecraft/client/multiplayer/WorldClient;func_175674_a(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;",
+        "getMouseOver": "Lnet/minecraft/client/renderer/EntityRenderer;func_78473_a(F)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V",
+        "channelRead0": "Lnet/minecraft/network/NetworkManager;channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinMinecraft": {
+        "Lnet/minecraft/client/Minecraft;displayCrashReport(Lnet/minecraft/crash/CrashReport;)V": "Lnet/minecraft/client/Minecraft;func_71377_b(Lnet/minecraft/crash/CrashReport;)V",
+        "runTickKeyboard": "Lnet/minecraft/client/Minecraft;func_184118_az()V",
+        "run": "Lnet/minecraft/client/Minecraft;func_99999_d()V",
+        "shutdown": "Lnet/minecraft/client/Minecraft;func_71400_g()V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinEntityPlayerSP": {
+        "move": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70091_d(Lnet/minecraft/entity/MoverType;DDD)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinGuiScreen": {
+        "renderToolTip": "Lnet/minecraft/client/gui/GuiScreen;func_146285_a(Lnet/minecraft/item/ItemStack;II)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinEntityPlayer": {
+        "travel": "Lnet/minecraft/entity/player/EntityPlayer;func_191986_a(FFF)V"
+      },
+      "me/fluffycq/icehack/mixin/client/MixinTabList": {
+        "renderPlayerlist": "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;func_175249_a(ILnet/minecraft/scoreboard/Scoreboard;Lnet/minecraft/scoreboard/ScoreObjective;)V",
+        "getPlayerName": "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;func_175243_a(Lnet/minecraft/client/network/NetworkPlayerInfo;)Ljava/lang/String;"
+      }
+    }
+  }
+}

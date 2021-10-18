@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.fluffycq.icehack.mixin.client",
+  "refmap": "mixins.icehack.refmap.json",
+  "client": [
+	"MixinMinecraft",
+	"MixinNetworkManager",
+	"MixinEntityPlayerSP",
+	"MixinEntityPlayer",
+	"MixinGuiScreen",
+	"MixinEntityRenderer",
+	"MixinTabList"
+  ]
+}
